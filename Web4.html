@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ahmed CV</title>
+
+    <style>
+        /* TODO 1: Body & Font Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0f1020;
+            color: #ffffff;
+            line-height: 1.6;
+            margin: 0;
+            padding: 30px;
+        }
+
+        /* TODO 6: Container Shadow */
+        .cv-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #16172b;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        /* TODO 2: Header with Gradient */
+        .cv-header {
+            background: linear-gradient(135deg, #1155cc, #31a3ae, #16213e);
+            text-align: center;
+            padding: 35px 20px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+        }
+
+        .cv-header h1 {
+            margin: 10px 0 5px;
+            font-size: 32px;
+        }
+
+        .cv-header p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        /* TODO 7: Circular Photo */
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #4caf50;
+            box-shadow: 0 0 20px rgba(76, 175, 80, 0.6);
+        }
+
+        h2 {
+            color: #4caf50;
+            border-bottom: 1px solid #333a55;
+            padding-bottom: 6px;
+            margin-top: 28px;
+        }
+
+        p {
+            margin-bottom: 12px;
+        }
+
+        /* TODO 3: Skills as Tags */
+        .skills-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills-list li {
+            display: inline-block;
+            background-color: #4caf50;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            margin: 5px;
+            font-weight: bold;
+        }
+
+        /* TODO 4: Styled Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        th {
+            background-color: #4caf50;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+
+        td {
+            padding: 12px;
+            border: 1px solid #2c2f4a;
+        }
+
+        tr:nth-child(even) {
+            background-color: #1f2138;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #181a30;
+        }
+
+        /* TODO 5: Link Styling */
+        a {
+            color: #4caf50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #7be67e;
+            text-decoration: underline;
+        }
+
+        .projects-list li {
+            margin-bottom: 8px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #333a55;
+            color: #cccccc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cv-container">
+
+        <header class="cv-header">
+            <img src="ahmed-photo.jpeg" alt="Profile Photo" class="profile-photo">
+            <h1>Ahmed Zeyad Khalil Harb Abu Hilal</h1>
+            <p>Web Developer | Student at Al-Aqsa University</p>
+        </header>
+
+        <section>
+            <h2>About Me</h2>
+            <p>
+                I am a Computer Engineering and Artificial Intelligence student at Al-Aqsa University.
+                I am interested in databases, software engineering, web development, and modern web technologies
+                including HTML, CSS, and JavaScript.
+            </p>
+        </section>
+
+        <section>
+            <h2>Personal Information</h2>
+
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <td>Ahmed Zeyad Khalil Harb Abu Hilal</td>
+                </tr>
+                <tr>
+                    <th>Student ID</th>
+                    <td>1320222930</td>
+                </tr>
+                <tr>
+                    <th>University</th>
+                    <td>Al-Aqsa University</td>
+                </tr>
+                <tr>
+                    <th>Major</th>
+                    <td>Computer Engineering and Artificial Intelligence</td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td><a href="mailto:ah2004ze@gmail.com">ah2004ze@gmail.com</a></td>
+                </tr>
+                <tr>
+                    <th>Phone</th>
+                    <td><a href="tel:0592962575">0592962575</a></td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Database Design</li>
+                <li>SQL</li>
+                <li>Problem Solving</li>
+                <li>Bootstrap</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+
+            <table>
+                <tr>
+                    <th>Degree</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>BSc Computer Engineering and Artificial Intelligence</td>
+                    <td>Al-Aqsa University</td>
+                    <td>2023 - Present</td>
+                    <td>In Progress</td>
+                </tr>
+                <tr>
+                    <td>High School Diploma</td>
+                    <td>Secondary School</td>
+                    <td>2019 - 2023</td>
+                    <td>Completed</td>
+                </tr>
+                <tr>
+                    <td>Online Courses</td>
+                    <td>Web Development</td>
+                    <td>2024</td>
+                    <td>Completed</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Work Experience</h2>
+            <p>Database Manager - WFP</p>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <ul class="projects-list">
+                <li><strong>Personal CV Website</strong> - A personal resume page built with HTML and CSS.</li>
+                <li><strong>Campus Event Management System</strong> - A system for managing university events.</li>
+                <li><strong>Web Scraping Project</strong> - A project for collecting data from websites.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <p>
+                <a href="mailto:ah2004ze@gmail.com">Email Me</a> |
+                <a href="https://github.com">GitHub</a> |
+                <a href="https://www.alaqsa.edu.ps">Al-Aqsa University</a>
+            </p>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Ahmed Zeyad. All Rights Reserved.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
